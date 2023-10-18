@@ -1,0 +1,187 @@
+/*estilos gerais*/
+body{
+    font-family: Arial, sans-serif;
+    margin: 0%;
+    padding: 0%;
+    background-color: rgb(198, 117, 207);
+}
+
+/*estilos do cabeçalho*/
+header{
+    background-color: rgb(128, 128, 213);
+    color: rgb(160, 195, 230);
+    padding: 20p;
+    text-align: center;
+}
+
+header h1{
+    margin:0%;
+}
+
+/*estilos menu desktop*/
+.menu-desktop{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.menu-desktop li{
+    list-style: none;
+    margin-right: 20px;
+}
+
+.menus-desktop li:last-child{
+    margin-right: 0%;
+}
+
+.menu-desktop a{
+    color: rgb(237, 226, 226);
+    text-decoration: none;
+    padding: 5px;
+}
+
+/*estilo menu mobile*/
+.menu-mobile{
+    display: none;
+}
+
+.menu-toggle-checkbox{
+    display: none;
+}
+
+.menu-toggle-label{
+    display: block;
+    background-color: rgb(184, 184, 227);
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.menu-list{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    display: none;
+}
+
+.menu-list li{
+    margin-bottom: 10px;
+}
+
+.menu-list a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.form-container {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3)
+}
+
+.form-container h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0 0 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #444;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #444;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="number"],
+.form-container input[type="tel"],
+.form-container textarea .form-container select {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: #444;
+    background-color: #f2f2f2;
+}
+
+.form-container input[type="text"]:focus,
+.form-container input[type="email"]:focus,
+.form-container input[type="number"]:focus,
+.form-container input[type="tel"]:focus,
+.form-container textarea:focus,
+.form-container select:focus {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: #444;
+    background-color: #f2f2f2;
+}
+
+/*conteudo pricipal*/
+
+
+
+/*Respossividade*/
+@media only screen and (max-width: 600px){
+    .menu-desktop{
+        display: none;
+    }
+    .menu-mobile{
+        display: block;
+    }
+    .menu-toggle-checkbox{
+        display: none;
+    }
+    .menu-toggle-label{
+        display: block;
+        background-color: blue;
+        color: #fff;
+        font-size: 20px;
+        padding: 10%;
+        cursor: pointer;
+        text-align: center;
+    }
+    .menu-list{
+        list-style: none;
+        padding: 0%;
+        margin: 0%;
+        display: none;
+    }
+    .menu-list li{
+        margin-bottom: 10px;
+    }
+    .menu-list a{
+        color: #fff;
+        text-decoration: none;
+    }
+    .menu-toggle-checkbox:checked ~ .menu-list{
+        display: block;
+    }
+    header{
+        background-color: blue;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+}
